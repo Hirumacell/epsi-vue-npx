@@ -8,7 +8,7 @@ const port = 3000;
 app.use(express.json());
 app.use(cors());
 
-const dbPath = '..\\athlenet.sqlite3';
+const dbPath = '../datas/athlenet.sqlite3';
 
 const db = new sqlite3.Database(dbPath, sqlite3.OPEN_READWRITE, (err) => {
     if (err) return console.error(err.message);
@@ -19,6 +19,23 @@ const db = new sqlite3.Database(dbPath, sqlite3.OPEN_READWRITE, (err) => {
 
 app.get('/test', (req, res) => {
     res.send('Le serveur fonctionne !');
+});
+
+app.get('/classement', (req, res) => {
+    const query = `
+        SELECT c.nom, c.image, cl.position, cl.points_attribues
+        FROM club c
+        JOIN classement cl ON c.id = cl.club_id
+        ORDER BY cl.position ASC;
+    `;
+
+    db.all(query, [], (err, rows) => {
+        if (err) {
+            res.status(500).send({ error: err.message });
+            return;
+        }
+        res.status(200).json(rows);
+    });
 });
 
 app.get('/clubs', (req, res) => {

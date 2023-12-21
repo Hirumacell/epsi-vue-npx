@@ -4,17 +4,17 @@
         <table>
             <thead>
                 <tr>
-                    <th>Position</th>
-                    <th>Club ID</th>
-                    <th>Saison ID</th>
-                    <th>Points</th>
+                    <th>Rank</th>
+                    <th>Logo</th>
+                    <th>Club</th>
+                    <th>Rating</th>
                 </tr>
             </thead>
             <tbody>
                 <tr v-for="club in classement" :key="club">
-                    <td>{{ club.position}}</td>
-                    <td>{{ club.club_id }}</td>
-                    <td>{{ club.saison_id }}</td>
+                    <td>{{ index + 1 }}</td>
+                    <td><img :src="club.image" alt="Logo" /></td>
+                    <td>{{ club.nom }}</td>
                     <td>{{ club.points_attribues }}</td>
                 </tr>
             </tbody>
@@ -30,6 +30,17 @@ export default {
         };
     },
     mounted() {
+        this.fetchClassement();
+    },
+    methods: {
+        fetchClassement() {
+            fetch('http://localhost:3000/classement') // Remplacez par votre URL de l'API
+                .then(response => response.json())
+                .then(data => {
+                    this.classement = data;
+                })
+                .catch(error => console.error('Erreur:', error));
+        }
     }
 };
 </script>
