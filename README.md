@@ -1,35 +1,27 @@
 # epsi-vue-npx
 
-This template should help get you started developing with Vue 3 in Vite.
+<<<<<<< HEAD
+l'objectif du projet est d'afficher un classement des clubs est nations selon leur résultats sur la ligue Inter-clubs et la ligue mondiale sur chaque saison.
+=======
+## Vue/Composants
 
-## Recommended IDE Setup
+- Baptiste: vue routeur / nettoyage
+- Christian: liste classmeent clubs / Nations
+- Alexis: composant tableau
+- Jean-LAMARRE: Camembert répartition points clubs/ nations
+- Sydney: aide Jeam-lammarre Camembert répartition points clubs/ nations + ajout datas dans la BDD
+>>>>>>> 761d79f0234918fd1b14509ecb4d08635dfe6d72
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Customize configuration
+## Répartition des tâches
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Pour se faire , nous nous répartissons les tâches :
 
-## Project Setup
+Baptiste: vue routeur / nettoyage
+Christian: liste classmeent clubs / Nations
+Alexis: composant tableau
+Jean-LAMARRE: Camembert répartition points clubs/ nations
+Sydney:  aide Jeam-lammarre Camembert répartition points clubs/ nations + ajout datas dans la BDD
 
-```sh
-npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
