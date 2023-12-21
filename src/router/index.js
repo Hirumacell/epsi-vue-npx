@@ -18,10 +18,12 @@ const router = createRouter({
     {
       path: '/PaysClassement',
       name: 'PaysClassement',
+      //component:
     },
     {
       path: '/NuagePoint',
       name: 'NuagePoint',
+      //component:
 
     }
   ]
