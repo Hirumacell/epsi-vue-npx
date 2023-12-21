@@ -9,7 +9,7 @@ Pour se faire , nous nous répartissons les tâches :
 Baptiste: vue routeur / nettoyage
 Christian: liste classmeent clubs / Nations
 Alexis: composant tableau
-Jean-LAMARRE:
+Jean-LAMARRE: Camembert répartition points clubs/ nations
 Sydney:  aide Jeam-lammarre Camembert répartition points clubs/ nations + ajout datas dans la BDD
 
 ## Customize configuration
