@@ -20,7 +20,7 @@ export default {
       <!--
       <HelloWorld msg="Hello EPSI" />
       -->
-      <HelloWorldOptionAPI msg="Nike zbi" @counterUpdated="afficherAlert"/>
+      <HelloWorldOptionAPI msg="Application Projet" @counterUpdated="afficherAlert"/>
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
