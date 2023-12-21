@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import ClubClassement from '@/views/ClubClassement.vue'
 import { Chart } from 'chart.js'
 import BarChart from '@/views/BarChart.vue'
 
@@ -12,13 +13,14 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      path: '/ClubClassement',
+      name: 'ClubClassement',
+      component: ClubClassement
     },
+    {
+      path: '/PaysClassement',
+      name: 'PaysClassement',
+    }
   ]
 })
 
