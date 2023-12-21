@@ -1,7 +1,5 @@
 # epsi-vue-npx
 
-l'objectif du projet est d'afficher un classement des clubs est nations selon leur résultats sur la ligue Inter-clubs et la ligue mondiale sur chaque saison.
-
 ## Vue/Composants
 
 - Baptiste: vue routeur / nettoyage
@@ -9,9 +7,6 @@ l'objectif du projet est d'afficher un classement des clubs est nations selon le
 - Alexis: composant tableau
 - Jean-LAMARRE: Camembert répartition points clubs/ nations
 - Sydney: aide Jeam-lammarre Camembert répartition points clubs/ nations + ajout datas dans la BDD
-
-
-
 
 ## Customize configurationgit pull
 
