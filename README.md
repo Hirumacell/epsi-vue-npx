@@ -2,6 +2,7 @@
 
 l'objectif du projet est d'afficher un classement des clubs est nations selon leur résultats sur la ligue Inter-clubs et la ligue mondiale sur chaque saison.
 
+
 ## Répartition des tâches
 
 Pour se faire , nous nous répartissons les tâches :
