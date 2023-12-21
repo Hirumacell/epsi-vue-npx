@@ -1,12 +1,19 @@
 # epsi-vue-npx
 
-This template should help get you started developing with Vue 3 in Vite.
+l'objectif du projet est d'afficher un classement des clubs est nations selon leur résultats sur la ligue Inter-clubs et la ligue mondiale sur chaque saison.
 
-## Recommended IDE Setup
+## Vue/Composants
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- Baptiste: vue routeur / nettoyage
+- Christian: liste classmeent clubs / Nations
+- Alexis: composant tableau
+- Jean-LAMARRE: Camembert répartition points clubs/ nations
+- Sydney: aide Jeam-lammarre Camembert répartition points clubs/ nations + ajout datas dans la BDD
 
-## Customize configuration
+
+
+
+## Customize configurationgit pull
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
