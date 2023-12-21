@@ -5,18 +5,17 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+
+    <img alt="Vue logo" class="logo" src="@/assets/newlogo.jpg" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="Athlenet" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/camember">Camember</RouterLink>
-        <RouterLink to="/ClubClassement">Classement des clubs</RouterLink>
-        <RouterLink to="/NuagePoints">Nuage de points</RouterLink>
-        <RouterLink to="/PaysClassement">Classement par pays</RouterLink>
+        <RouterLink to="/clubclassement">Classement des clubs</RouterLink>
+        <RouterLink to="/nuagepoints">Nuage de points</RouterLink>
+        <RouterLink to="/paysclassement">Classement par pays</RouterLink>
 
       </nav>
     </div>
