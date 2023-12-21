@@ -65,7 +65,14 @@ app.post('/ajouter-resultat', async (req, res) => {
     const query = `INSERT INTO classements (club_id, saison_id, position, points_attribues)
                    VALUES (?, ?, ?, ?)
                    ON CONFLICT (club_id, saison_id) DO UPDATE SET position = ?, points_attribues = ?`;
+
+    db.run(query, [clubId, saisonId, position, points, position, points], function(err) {
+    if (err) {
+        res.status(500).send({ error: err.message });
+        return;
+    }
         res.status(200).send({ message: 'Resultat ajouté avec succès' });
+    });
     } catch (err) {
         res.status(500).send({ error: err.message });
     }
