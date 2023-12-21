@@ -29,6 +29,11 @@ const router = createRouter({
       path: '/stats',
       name: 'stats',
       component: BarChart
+    },
+    {
+      path: '/classement/clubs',
+      name: 'classment-clubs',
+      component: () => import('../views/MainView.vue')
     }
   ]
 })

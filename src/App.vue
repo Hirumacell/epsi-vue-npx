@@ -25,6 +25,7 @@ export default {
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/destination">Destination</RouterLink>
+        <RouterLink to="/classement/clubs">Classement des clubs</RouterLink>
       </nav>
     </div>
   </header>
