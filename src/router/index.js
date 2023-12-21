@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import { Chart } from 'chart.js'
 import BarChart from '@/views/BarChart.vue'
 
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -10,6 +11,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
+    },
+    {
+      path: '/camember',
+      name: 'camember',
+      component: BarChart
     },
     {
       path: '/about',
