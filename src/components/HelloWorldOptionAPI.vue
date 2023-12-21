@@ -9,8 +9,8 @@ export default {
       count: 0
     }
   },
-  methods :{
-    incrementCount(){
+  methods: {
+    incrementCount() {
       this.count++
       this.$emit('counterUpdated')
     }
@@ -22,9 +22,7 @@ export default {
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
   </div>
-  <div>
-    Mon compteur : {{count}}<button @click="incrementCount">+</button>
-  </div>
+  <div>Mon compteur : {{ count }}<button @click="incrementCount">+</button></div>
 </template>
 
 <style scoped>

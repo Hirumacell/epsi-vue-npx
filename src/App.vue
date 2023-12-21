@@ -3,8 +3,8 @@ import { RouterLink, RouterView } from 'vue-router'
 //import HelloWorld from './components/HelloWorld.vue'
 import HelloWorldOptionAPI from '@/components/HelloWorldOptionAPI.vue'
 export default {
-  components: {HelloWorldOptionAPI},
-  methods : {
+  components: { HelloWorldOptionAPI },
+  methods: {
     afficherAlert() {
       alert('compteur mis à jour')
     }
@@ -20,7 +20,7 @@ export default {
       <!--
       <HelloWorld msg="Hello EPSI" />
       -->
-      <HelloWorldOptionAPI msg="Application Projet" @counterUpdated="afficherAlert"/>
+      <HelloWorldOptionAPI msg="Application Projet" @counterUpdated="afficherAlert" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>

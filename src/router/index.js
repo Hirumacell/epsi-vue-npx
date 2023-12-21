@@ -28,8 +28,8 @@ const router = createRouter({
     {
       path: '/stats',
       name: 'stats',
-      component: BarChart,
-    },
+      component: BarChart
+    }
   ]
 })
 

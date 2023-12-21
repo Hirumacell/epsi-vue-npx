@@ -1,11 +1,8 @@
-<script setup>
-
-
-</script>
+<script setup></script>
 
 <template>
   <div class="about">
-    <h1>La Destination : {{$route.params.pays}}</h1>
+    <h1>La Destination : {{ $route.params.pays }}</h1>
   </div>
 </template>
 

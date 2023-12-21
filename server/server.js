@@ -8,7 +8,7 @@ const port = 3000;
 app.use(express.json());
 app.use(cors());
 
-const dbPath = 'C:\\Users\\sydne\\OneDrive\\Documents\\VueJS-exos\\CV-VueJS\\db\\athlenet';
+const dbPath = '../athlenet.sqlite3';
 
 const db = new sqlite3.Database(dbPath, sqlite3.OPEN_READWRITE, (err) => {
     if (err) return console.error(err.message);

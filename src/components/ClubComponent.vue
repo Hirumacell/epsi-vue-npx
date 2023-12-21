@@ -1,28 +1,25 @@
 <!-- ClubComponent.vue -->
 <template>
-    <div class="club-row">
-      <!--<img :src="clubs.image" alt="" class="club-image">-->
-      <div class="club-classement">
-        {{ classement }}
-      </div>
-      <img :src="club.image" alt="" class="club-image">
-      <div class="club-name">{{ club.nom }}</div>
-      <div class="club-points">{{ club.points }}</div>
-      <!-- Autres informations du club -->
+  <div class="club-row">
+    <!--<img :src="clubs.image" alt="" class="club-image">-->
+    <div class="club-classement">
+      {{ classement }}
     </div>
+    <img :src="club.image" alt="" class="club-image" />
+    <div class="club-name">{{ club.nom }}</div>
+    <div class="club-points">{{ club.points }}</div>
+    <!-- Autres informations du club -->
+  </div>
 </template>
-  
-  
 
 <script>
-
 export default {
-    props: {
-        club: Object,
-        classement: Number
-    },
+  props: {
+    club: Object,
+    classement: Number
+  },
 
-    computed: {
+  computed: {
     // Ajoutez d'autres propriétés calculées pour différentes disciplines
   }
 }
@@ -37,9 +34,8 @@ export default {
   padding: 2px;
   border-bottom: 1px solid #ddd;
   background-color: #f9f9f9;
-  
 }
-  
+
 .club-image {
   width: 70px; /* Ajustez la taille si nécessaire */
   height: 70px; /* Assurez-vous que l'image garde ses proportions */
@@ -53,18 +49,14 @@ export default {
 }
 
 .club-points {
-  justify-self: center; 
-  
+  justify-self: center;
 }
 
-.club-classement{
+.club-classement {
   justify-self: center;
   font-size: larger;
   font-weight: bold;
   font-style: italic;
   color: red;
-  
 }
-  
-  
 </style>
