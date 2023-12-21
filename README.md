@@ -1,6 +1,12 @@
 # epsi-vue-npx
 
-This template should help get you started developing with Vue 3 in Vite.
+## Vue/Composants
+
+Baptiste: vue routeur / nettoyage
+Christian: liste classmeent clubs / Nations
+Alexis: composant tableau
+Jean-LAMARRE: Camembert répartition points clubs/ nations
+Sydney: aide Jeam-lammarre Camembert répartition points clubs/ nations + ajout datas dans la BDD
 
 ## Recommended IDE Setup
 
