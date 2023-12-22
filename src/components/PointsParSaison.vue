@@ -11,11 +11,11 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="(club, index) in classement" :key="club.id">
+                <tr v-for="club in classement" :key="club">
                     <td>{{ index + 1 }}</td>
                     <td><img :src="club.image" alt="Logo" /></td>
                     <td>{{ club.nom }}</td>
-                    <td>{{ club.points }}</td>
+                    <td>{{ club.points_attribues }}</td>
                 </tr>
             </tbody>
         </table>
@@ -34,7 +34,7 @@ export default {
     },
     methods: {
         fetchClassement() {
-            fetch('http://localhost:3000/classement') 
+            fetch('http://localhost:3000/classement') // Remplacez par votre URL de l'API
                 .then(response => response.json())
                 .then(data => {
                     this.classement = data;
@@ -53,8 +53,8 @@ table {
 
 th, td {
   border: 1px solid black;
-  padding: 8x;
-  text-align: center;
+  padding: 8px;
+  text-align: left;
 }
 
 thead {

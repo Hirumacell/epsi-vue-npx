@@ -23,10 +23,9 @@ app.get('/test', (req, res) => {
 
 app.get('/classement', (req, res) => {
     const query = `
-        SELECT c.nom, c.image, cl.position, cl.points_attribues
-        FROM club c
-        JOIN classement cl ON c.id = cl.club_id
-        ORDER BY cl.position ASC;
+        SELECT id, nom, image, COALESCE(points, 0) as points
+        FROM club
+        ORDER BY points DESC;
     `;
 
     db.all(query, [], (err, rows) => {
