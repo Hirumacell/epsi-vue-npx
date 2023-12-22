@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import ClassementClub from '@/components/ClassementClub.vue'
+import ClassementClub from '@/views/Club/ClassementClub.vue'
 import BarChart from '@/views/BarChart.vue'
 
 
